@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Flickr Customer Photos</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="flickr.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="layover">
+  </div>
+  <div class="container bottom-spacer">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">Customer Photos</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="input-group center-block text-center">
+          <label for="materials">Materials</label>
+          <select name="materials" id="materials" class="form-control">
+            <option value="">
+              All Materials
+            </option>
+            <option value="laminate">
+              Laminate
+            </option>
+            <option value="wood">
+              Wood
+            </option>
+            <option value="acrylic">
+              Acrylic
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="input-group center-block text-center">
+          <label for="types">Types</label>
+          <select name="types" id="types" class="form-control">
+            <option value="">
+              All Types
+            </option>
+            <option value="pedestal">
+              Pedestal
+            </option>
+            <option value="cylinder">
+              Cylinder
+            </option>
+            <option value="cube">
+              Cube Table
+            </option>
+            <option value="custom">
+              Custom
+            </option>
+            <option value="tradeshow">
+              Tradeshow
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="input-group center-block text-center">
+          <label for="features">Features</label>
+          <select name="features" id="features" class="form-control">
+            <option value="">
+              All Features
+            </option>
+            <option value="spotlight">
+              Spotlight
+            </option>
+            <option value="ambient">
+              Ambient Light
+            </option>
+            <option value="graphics">
+              Graphics
+            </option>
+            <option value="home">
+              Home Decor
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="input-group center-block text-center">
+          <label for="custom">Custom Tag</label>
+          <input type="input" id="custom" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row top-spacer">
+      <div class="col-xs-12">
+        <button class="btn btn-primary btn-lg btn-block" id="getPics">Search Pictures</button>
+      </div>
+    </div>
+
+  </div>
+  <div class="container" id="container">
+  </div>
+  <div class="container">
+    <div class="row top-spacer bottom-spacer">
+      <div class="col-xs-12" id="buttonContainer">
+        <p class="text-center">
+          <span class="" id="search-display">Select the options for you search and click "Search Pictures" button to view the pictures</span>
+        </p>
+        <p class="text-center">
+          <span class="hide" id="counter-display">
+            Showing
+            <span id="range">0</span> of
+            <span id="total">0</span>
+          </span>
+        </p>
+        <button class="hide" id="showPics">Show More Pictures</button>
+      </div>
+    </div>
+    <div class="row top-spacer bottom-spacer">
+      <div class="col-xs-12">
+        <button class="hide" id="removePics">Clear Pictures</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="keys.js"></script>
+  <script src="flickr.js"></script>
+</body>
+
+</html>

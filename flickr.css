@@ -1,0 +1,33 @@
+.img-customer {
+  max-height: 150px;
+  overflow: hidden;;
+}
+
+.top-spacer {
+  margin-top: 20px;
+}
+.bottom-spacer {
+  margin-bottom: 20px;
+}
+
+.layover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(100,100,100,.85);
+    z-index: 11;
+}
+
+.large-image {
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 10px auto;
+}
+
+#enlarged-title, #enlarged-description {
+  opacity: 1;
+  color: white;
+}
